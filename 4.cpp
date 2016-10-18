@@ -12,7 +12,7 @@ void printMenu(){
 
 int main(){
 
-	//freopen("students.txt","r",stdin);
+	freopen("students.txt","r",stdin);
 
 	int n,k;
 	cin >> n;
@@ -21,7 +21,7 @@ int main(){
 	readStudents(arr,n);
 	printStudents(arr,n);
 
-	do{
+	/*do{
 
 		printMenu();
 
@@ -39,6 +39,7 @@ int main(){
 		}
 		
 	}while(k!=3);
+	*/
 	
 	return 0;
 }

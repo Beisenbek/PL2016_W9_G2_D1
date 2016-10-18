@@ -14,10 +14,19 @@ void readStudents(student *arr,int n){
 	}
 }
 
+void printBreakLine(){
+	for(int k = 0; k < 50; ++k){
+		cout << "=";
+	}
+	cout << endl;
+}
+
 void printStudents(student *arr,int n){
 	for(int i = 0; i < n; ++i){
-		cout << arr[i].sname << " " << arr[i].name << " " << arr[i].gpa << endl; 
+		printBreakLine();
+		printf("|%10s |%10s |%10.2f\n", arr[i].sname.c_str(),arr[i].name.c_str(), arr[i].gpa);
 	}
+	printBreakLine();
 }
 
 void sortStudentsForGPA(student *arr,int n){
